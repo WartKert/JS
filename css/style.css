@@ -183,20 +183,40 @@ body .arrow_menu > a:hover {
 	transition: opacity 1.2s ease-out;
 }
 
-body main div {
-	flex-grow: 10;
+body main div[class="elemCanvas"] {
+	/* flex-grow: 10; */
 	display: flex;
-	/* height: 700px; */
 	flex-direction: row;
-	/* justify-content: center; */
+	justify-content: center;
+	position: relative;
+	height: 100%;
 }
 
-body main div .canvas {
+body main div[class="blockCanvas"] {
+	flex-grow: 10;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/* align-items: flex-start; */
+	max-height: 11vh;
+	position: relative;
+	border: 6px solid rgb(56, 58, 167);
+	border-radius: 12px;
+	margin: 10px;
+}
+
+body main div[class="blockCanvas"] > .canvas {
 	flex-grow: 1;
+	flex-shrink: 1;
+	/* width: 50%; */
 	min-width: 0px;
-	min-height: 0px;
+}
+body main div[class="blockCanvas"] > .canvas2,
+.canvas4 {
+	border-right: 6px dotted rgb(56, 58, 167);
 }
 
 body footer {
-	flex-grow: 1;
+	/* flex-grow: 1; */
+	height: 5vh;
 }

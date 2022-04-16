@@ -1,54 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="../css/style.css" />
-		<script src="../script/script.js"></script>
-	</head>
 
-	<body>
-		<header>
-			<div class="logoImage">
-				<a href="../index.html"
-					><img
-						src="../image/logo_672.png"
-						title="Перейти на главную страницу"
-						alt="Изображение
-                        логотипа"
-				/></a>
-			</div>
-			<div class="logoText">
-				<p>Задача № 17</p>
-			</div>
-		</header>
-		<main>
-			<section>
-				<h1>Арифметика с игральными костями</h1>
-				<p>
-					<strong><abbr title="Задача №17">Эта программа</abbr></strong> — это математическая головоломка, которая выбрасывает от
-					двух до шести игральных костей, сумму очков на которых вы должны вычислить так быстро, как только можете. В данной
-					программе верхние (лицевые) стороны костей отображаются в случайных местах на экране.
-				</p>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/style.css" />
+	<script src="../script/script.js"></script>
+</head>
 
-				<label for="inputNumberDice">Максимальное количество кубиков: </label>
-				<input class="input" type="number" id="inputNumberDice" value="6" max="300" min="2" /><br />
-				<label for="inputSizeDice">Размер кубиков: </label>
-				<input class="input" type="number" id="inputSizeDice" value="70" max="200" min="20" /><br />
-				<input class="button" type="button" value="Обновить рисунок" onclick="draw()" />
-				<p class="messageError"></p>
-			</section>
-			<div class="arrow_menu">
-				<!-- <a href="http://" class="arrow_left" title="Назад"><img src="..\image\left-64.png" alt="Назад" /></a>
+<body>
+	<header>
+		<div class="logoImage">
+			<a href="../index.html"><img src="../image/logo_672.png" title="Перейти на главную страницу" alt="Изображение
+                        логотипа" /></a>
+		</div>
+		<div class="logoText">
+			<p>Задача № 17</p>
+		</div>
+	</header>
+	<main>
+		<section>
+			<h1>Арифметика с игральными костями</h1>
+			<p>
+				<strong><abbr title="Задача №17">Эта программа</abbr></strong> — это математическая головоломка, которая выбрасывает от
+				двух до шести игральных костей, сумму очков на которых вы должны вычислить так быстро, как только можете. В данной
+				программе верхние (лицевые) стороны костей отображаются в случайных местах на экране.
+			</p>
+
+			<label for="inputNumberDice">Максимальное количество кубиков: </label>
+			<input class="input" type="number" id="inputNumberDice" value="6" max="300" min="2" /><br />
+			<label for="inputSizeDice">Размер кубиков: </label>
+			<input class="input" type="number" id="inputSizeDice" value="70" max="200" min="20" /><br />
+			<input class="button" type="button" value="Обновить рисунок" onclick="draw()" />
+			<p class="messageError"></p>
+		</section>
+		<div class="arrow_menu">
+			<!-- <a href="http://" class="arrow_left" title="Назад"><img src="..\image\left-64.png" alt="Назад" /></a>
 				<a href="http://" class="arrow_right" title="Далее"><img src="..\image\right-64.png" alt="Далее" /></a> -->
-			</div>
-			<div id="divCanvas" class="blockCanvas">
-				<canvas class="canvas"></canvas>
-			</div>
-		</main>
+		</div>
+		<div id="divCanvas" class="elemCanvas">
+			<canvas class="canvas" height="200px" width="200px"></canvas>
+		</div>
+	</main>
 
-		<footer></footer>
-	</body>
+	<footer></footer>
+</body>
+
 </html>

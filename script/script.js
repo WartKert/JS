@@ -232,10 +232,10 @@ class GameDices {
 function draw() {
 	try {
 		document.querySelector(".messageError").textContent = "";
-		let ctx = document.querySelector("canvas");
-		let size = document.getElementById("divCanvas").getBoundingClientRect();
-		ctx.setAttribute("width", size.width);
-		ctx.setAttribute("height", size.height);
+		let ctx = document.querySelector(".canvas");
+		let size = document.querySelector(".elemCanvas").getBoundingClientRect();
+		ctx.setAttribute("width", parseInt(size.width - 20) + "px");
+		ctx.setAttribute("height", parseInt(size.height - 20) + "px");
 		let val = document.querySelectorAll(".input");
 		let part = new GameDices(+val[0].value, +val[1].value, ctx);
 	} catch (error) {
